@@ -67323,7 +67323,7 @@ J(a){var s=this.c
 if(s<400)s=150
 else if(s<=600)s=210
 else s=s>1270?320:250
-return A.jF("assets/images/profile.png",null,s,null)}}
+return A.jF("assets/images/mylogo.png",null,s,null)}}
 A.qc.prototype={
 J(a){var s=this,r=null,q="Poppins",p="assets/images/icons8-github-500 (1).png",o=t.p,n=s.c,m=s.d,l=s.e,k=s.w,j=s.r
 return(s.f&1)===0?A.fr(A.a([A.Ey(A.hk(A.a([A.bR(n.toUpperCase(),A.aW(r,r,B.h,r,r,r,r,r,q,r,r,25,r,r,B.G,r,r,!0,r,0,r,r,r,r,r,r),r),B.ao,A.bR(m,A.aW(r,r,B.h,r,r,r,r,r,q,r,r,20,r,r,B.m,r,r,!0,r,0,r,r,r,r,r,r),r),B.ah,A.bR(l,A.aW(r,r,B.h,r,r,r,r,r,q,r,r,20,r,r,B.m,r,r,!0,r,0,r,r,r,r,r,r),r),B.eQ,new A.f9(p,k,40,r)],o),B.K,B.bc),1),B.eO,A.fv(A.jF(j,B.fk,r,r),400,240)],o),B.K,B.I,B.H):A.fr(A.a([A.fv(A.jF(j,B.fk,r,r),400,240),B.eO,A.Ey(A.hk(A.a([A.bR(n.toUpperCase(),A.aW(r,r,B.h,r,r,r,r,r,q,r,r,25,r,r,B.G,r,r,!0,r,0,r,r,r,r,r,r),r),B.ao,A.bR(m,A.aW(r,r,B.h,r,r,r,r,r,q,r,r,20,r,r,B.m,r,r,!0,r,0,r,r,r,r,r,r),r),B.ah,A.bR(l,A.aW(r,r,B.h,r,r,r,r,r,q,r,r,20,r,r,B.m,r,r,!0,r,0,r,r,r,r,r,r),r),B.eQ,new A.f9(p,k,40,r)],o),B.K,B.bc),1)],o),B.K,B.I,B.H)}}
