@@ -6,7 +6,7 @@ export const RESUME_DATA = {
   location: "Bharatpur-15, Chitwan, Nepal",
   // locationLink: "https://www.google.com/maps/place/Wrocław",
   about:
-    "Passionate Electronics Engineer with interest for Machine Learning, Deep Learning and Flutter app development",
+    "Passionate Electronics Engineer with interest for Machine Learning, Deep Learning, Natural Language Processing, Computer Vision and Flutter",
   summary:
     "I'm a passionate Electronics Communication and Information Engineer with a profound interest in the ever-evolving realms of Data Science and Flutter app development. I am currently focused on honing my skills in Natural Language Processing (NLP). I enjoy  Robotics, Machine Learning, Deep Learning and App development. As a hobby I like to sketch.",
   avatarUrl: "https://avatars.githubusercontent.com/u/83692376?s=96&v=4",
@@ -41,7 +41,8 @@ export const RESUME_DATA = {
     },
     {
       school: "Pashchimanchal Campus, IOE",
-      degree: "Bachelor of Engineering - BEI, Electronics, Information and Communication Engineering",
+      degree:
+        "Bachelor of Engineering - BEI, Electronics, Information and Communication Engineering",
       start: "2019",
       end: "2024",
     },
@@ -101,33 +102,58 @@ export const RESUME_DATA = {
   ],
   // skills: {
   //   "Machine Learning": [
-  //     "Supervised", 
-  //     "Unsupervised and Reinforcement learning", 
-  //     "Artificial Neural Networks", 
-  //     "CNN", 
+  //     "Supervised",
+  //     "Unsupervised and Reinforcement learning",
+  //     "Artificial Neural Networks",
+  //     "CNN",
   //     "RNN"
   //   ],
   //   "Programming": ["Python", "C", "C++", "Dart"],
   //   "Tools and Software": [
-  //     "Scikit-learn", 
-  //     "Tensorflow", 
-  //     "Scipy", 
-  //     "Pandas", 
-  //     "Matplotlib", 
+  //     "Scikit-learn",
+  //     "Tensorflow",
+  //     "Scipy",
+  //     "Pandas",
+  //     "Matplotlib",
   //     "Seaborn"
   //   ],
   //   "App Development": ["Flutter", "Firebase", "Provider", "GetX"],
   // },
   projects: [
     {
-      title: "Speech Denoiser using Deep Learning",
+      title: "Banking Customer Chat System with Speech Recognition",
       techStack: [
-        "TensorFlow",
-        "Librosa",
-        "Unet",
+        "Langchain",
+        "Gemini",
+        "Openai Whisper",
         "StreamLit",
+        "gTTs",
+        "Sentence Transformers",
       ],
-      description: "Trained UNET architecture that is able to remove the background noise from the speech audio producing a clean speech.",
+      description:
+        "Designed and implemented a sophisticated customer support system capable of handling both audio and text inputs,with advanced intent classification and response generation capabilities.",
+      // logo: ConsultlyLogo,
+      link: {
+        // label: "consultly.com",
+        href: "https://github.com/Instein125/Banking-customer-support-chatbot",
+      },
+    },
+    {
+      title: "Delta Arm Waste Classifier",
+      techStack: ["YoloV8", "OpenCv", "Roboflow", "Arduino", "Fusion360"],
+      description:
+        "Built a robotic delta arm integrated with a YOLOv8 model for waste identification and sorting into four categories: Biodegradable, Plastic, Paper, Metal",
+      // logo: ConsultlyLogo,
+      link: {
+        // label: "consultly.com",
+        href: "https://github.com/Instein125/Delta-Arm-Waste-Classifier",
+      },
+    },
+    {
+      title: "Speech Denoiser using Deep Learning",
+      techStack: ["TensorFlow", "Librosa", "Unet", "StreamLit"],
+      description:
+        "Trained UNET architecture that is able to remove the background noise from the speech audio producing a clean speech.",
       // logo: ConsultlyLogo,
       link: {
         // label: "consultly.com",
@@ -147,7 +173,14 @@ export const RESUME_DATA = {
     },
     {
       title: "Sajilo Ambulance",
-      techStack: ["Flutter", "Firebase", "Geolocator", "Geocoding", "Emailjs", "Firebase messaging"],
+      techStack: [
+        "Flutter",
+        "Firebase",
+        "Geolocator",
+        "Geocoding",
+        "Emailjs",
+        "Firebase messaging",
+      ],
       description:
         "Uber like app for Ambulance with triage predication feature and hospital recommendation. It was done as a AI hackathon project.",
       // logo: JarockiMeLogo,
@@ -158,7 +191,12 @@ export const RESUME_DATA = {
     },
     {
       title: "Access Control System",
-      techStack: ["Flutter", "Cloud firestore", "Push notifications", "Provider"],
+      techStack: [
+        "Flutter",
+        "Cloud firestore",
+        "Push notifications",
+        "Provider",
+      ],
       description:
         "IOT based applications that allows user to remotely access the door, light and smoke sensor. Intregated ESP32 to develop the overall system.",
       // logo: Minimal,
@@ -181,7 +219,8 @@ export const RESUME_DATA = {
     {
       title: "Malware Memory Analysis",
       techStack: ["Scikit-learn", "XGboost", "Seaborn", "Matplotlib"],
-      description: "Machine learning project for detecting whether the memory dumps are either Benign Spyware Trojan Horse or ransomware",
+      description:
+        "Machine learning project for detecting whether the memory dumps are either Benign Spyware Trojan Horse or ransomware",
       // logo: YearProgressLogo,
       link: {
         // label: "getyearprogress.com",
