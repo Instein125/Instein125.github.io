@@ -1,4 +1,6 @@
+import { YarsaTech } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
+import { start } from "repl";
 
 export const RESUME_DATA = {
   name: "Samman Shrestha",
@@ -6,7 +8,7 @@ export const RESUME_DATA = {
   location: "Bharatpur-15, Chitwan, Nepal",
   // locationLink: "https://www.google.com/maps/place/Wrocław",
   about:
-    "Passionate Electronics Engineer with interest for Embedded System, IoT, PCB designing, Artificial Intelligenve and Machine Learning",
+    "Passionate Electronics Engineer with interest for Embedded System, IoT, PCB designing, Artificial Intelligence and Machine Learning",
   summary:
     "I'm a passionate Electronics, Communication, and Information Engineer with a strong focus on Embedded Systems, Robotics, and IoT development. I have a keen interest in the intersection of hardware and software, including areas like firmware development, PCB design, and BLE-based systems. I also actively explore Artificial Intelligence, Machine Learning and app development to complement my embedded projects. In my free time, I enjoy sketching as a creative outlet.",
   avatarUrl: "https://avatars.githubusercontent.com/u/83692376?s=96&v=4",
@@ -31,7 +33,7 @@ export const RESUME_DATA = {
     {
       school: "Pashchimanchal Campus, IOE",
       degree:
-        "Bachelor of Engineering - BEI, Electronics, Information and Communication Engineering",
+        "Bachelor of Engineering - BEI, Electronics, Communication and Information Engineering",
       start: "2019",
       end: "2024",
     },
@@ -42,79 +44,108 @@ export const RESUME_DATA = {
       end: "2024",
     },
   ],
-  // work: [
-  //   {
-  //     company: "Parabol",
-  //     link: "https://parabol.co",
-  //     badges: ["Remote"],
-  //     title: "Senior Full Stack Developer",
-  //     logo: ParabolLogo,
-  //     start: "2021",
-  //     end: "2024",
-  //     description:
-  //       "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
-  //   },
-  //   {
-  //     company: "Clevertech",
-  //     link: "https://clevertech.biz",
-  //     badges: ["Remote"],
-  //     title: "Lead Android Developer → Full Stack Developer",
-  //     logo: ClevertechLogo,
-  //     start: "2015",
-  //     end: "2021",
-  //     description:
-  //       "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
-  //   },
-  //   {
-  //     company: "Jojo Mobile",
-  //     link: "https://bsgroup.eu/",
-  //     badges: [],
-  //     title: "Android Developer → Lead Android Developer",
-  //     logo: JojoMobileLogo,
-  //     start: "2012",
-  //     end: "2015",
-  //     description:
-  //       "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
-  //   },
-  //   {
-  //     company: "Nokia Siemens Networks",
-  //     link: "https://www.nokia.com",
-  //     badges: [],
-  //     title: "C/C++ Developer",
-  //     logo: NSNLogo,
-  //     start: "2010",
-  //     end: "2012",
-  //     description: "Creating and testing software for LTE base stations",
-  //   },
-  // ],
+  courses: [
+    {
+      course: "Mastering Microcontroller and Embedded Driver Development",
+      source:
+        "Udemy, Fastbit Academy",
+      start: "2024",
+      end: "2025"
+    },
+    {
+      course: "Microdegree™, Artificial Intelligence",
+      source:
+        "Fusemachine Nepal",
+      start: "2023",
+      end: "2024",
+    },
+    {
+      course: " LangChain & Vector Databases in Production",
+      source:
+        "Activeloop",
+      start: "2023",
+      end: "2024"
+    },
+  ],
+  work: [
+    {
+      company: "Yarsa Tech",
+      link: "https://yarsa.tech/",
+      badges: ["Embedded System", "PCB Design"],
+      title: "Electronics Engineer",
+      start: "2024",
+      end: "Present",
+      description: (
+        <>
+          {/* Senior developer and squad leader for an enterprise agile meeting
+          platform. */}
+          <ul className="list-inside list-disc">
+            <li>
+              Designed and developed the PCB and embedded firmware for a
+              wireless barcode scanner using BLE technology, reducing power
+              consumption.
+            </li>
+            <li>
+              Engineered development boards and evaluated microcontrollers such
+              as EC200U and F1C100s to support rapid prototyping and product
+              innovation.
+            </li>
+            <li>
+              Automated and streamlined key aspects of production and testing
+              processes, reducing manual effort, faster defect identification,
+              and better product quality and reliability.
+            </li>
+            <li>
+              Designed embedded system architectures for consumer electronic
+              products, ensuring scalability, robustness, and seamless
+              hardware-software integration.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+  ],
   skills: [
-    "Machine Learning",
-    "Deep Learning",
+    "Bare Metal Programming",
+    "BLE",
+    "LVGL",
+    "PCB Design",
+    "Kicad",
+    "Circuit Analysis",
+    "AI and Machine Learning",
     "NLP",
-    "Flutter",
+    "C and C++",
     "Python",
     "Robotics",
   ],
-  // skills: {
-  //   "Machine Learning": [
-  //     "Supervised",
-  //     "Unsupervised and Reinforcement learning",
-  //     "Artificial Neural Networks",
-  //     "CNN",
-  //     "RNN"
-  //   ],
-  //   "Programming": ["Python", "C", "C++", "Dart"],
-  //   "Tools and Software": [
-  //     "Scikit-learn",
-  //     "Tensorflow",
-  //     "Scipy",
-  //     "Pandas",
-  //     "Matplotlib",
-  //     "Seaborn"
-  //   ],
-  //   "App Development": ["Flutter", "Firebase", "Provider", "GetX"],
-  // },
   projects: [
+    {
+      title: "Delta Arm Waste Classifier",
+      techStack: ["YoloV8", "OpenCv", "Roboflow", "Arduino", "Fusion360"],
+      description:
+        "Built a robotic delta arm integrated with a YOLOv8 model for waste identification and sorting into four categories: Biodegradable, Plastic, Paper, Metal",
+      link: {
+        href: "https://github.com/Instein125/Delta-Arm-Waste-Classifier",
+      },
+    },
+    {
+      title: "BLE Mesh Notification System",
+      techStack: ["PB-O3M MCU", "Microvison Keil", "BLE 5.2", "SPI"],
+      description:
+        "Developed a BLE-based notification system enabling communication between nodes in a mesh topology for industrial and office notification applications.",
+      link: {
+        // href: "https://github.com/Instein125/Delta-Arm-Waste-Classifier",
+      },
+    },
+    {
+      title: "Development Board for EC200U",
+      techStack: ["Kicad", "Circuit Analysis"],
+      description:
+        "Designed a high-performance 4-layer development board for EC200U MCU with MIPI camera and display interfaces and high speed USB lines.",
+      link: {
+        // href: "https://github.com/Instein125/Delta-Arm-Waste-Classifier",
+      },
+    },
     {
       title: "Banking Customer Chat System with Speech Recognition",
       techStack: [
@@ -130,29 +161,7 @@ export const RESUME_DATA = {
       // logo: ConsultlyLogo,
       link: {
         // label: "consultly.com",
-        href: "https://github.com/Instein125/Banking-customer-support-chatbot",
-      },
-    },
-    {
-      title: "Delta Arm Waste Classifier",
-      techStack: ["YoloV8", "OpenCv", "Roboflow", "Arduino", "Fusion360"],
-      description:
-        "Built a robotic delta arm integrated with a YOLOv8 model for waste identification and sorting into four categories: Biodegradable, Plastic, Paper, Metal",
-      // logo: ConsultlyLogo,
-      link: {
-        // label: "consultly.com",
-        href: "https://github.com/Instein125/Delta-Arm-Waste-Classifier",
-      },
-    },
-    {
-      title: "Speech Denoiser using Deep Learning",
-      techStack: ["TensorFlow", "Librosa", "Unet", "StreamLit"],
-      description:
-        "Trained UNET architecture that is able to remove the background noise from the speech audio producing a clean speech.",
-      // logo: ConsultlyLogo,
-      link: {
-        // label: "consultly.com",
-        href: "https://github.com/Instein125/Speech-Denoiser-using-Deep-Learning",
+        // href: "https://github.com/Instein125/Banking-customer-support-chatbot",
       },
     },
     {
@@ -209,17 +218,6 @@ export const RESUME_DATA = {
       link: {
         // label: "barepapers.com",
         href: "https://github.com/Instein125/Hospital_management_system",
-      },
-    },
-    {
-      title: "Malware Memory Analysis",
-      techStack: ["Scikit-learn", "XGboost", "Seaborn", "Matplotlib"],
-      description:
-        "Machine learning project for detecting whether the memory dumps are either Benign Spyware Trojan Horse or ransomware",
-      // logo: YearProgressLogo,
-      link: {
-        // label: "getyearprogress.com",
-        href: "https://github.com/Instein125/Malware-Memory-Analysis-for-Intrusion-Detection",
       },
     },
   ],

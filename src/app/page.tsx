@@ -119,8 +119,30 @@ export default function Page() {
           </p>
         </Section>
 
+        {/* Education */}
+        <Section>
+          <h2 className="text-xl font-bold">Education</h2>
+          {RESUME_DATA.education.map((education) => {
+            return (
+              <Card key={education.school}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="font-semibold leading-none">
+                      {education.school}
+                    </h3>
+                    <div className="text-sm tabular-nums text-gray-500">
+                      {education.start} - {education.end}
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="mt-2">{education.degree}</CardContent>
+              </Card>
+            );
+          })}
+        </Section>
+
         {/* Work experience */}
-        {/* <Section>
+        <Section>
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
             return (
@@ -159,7 +181,7 @@ export default function Page() {
               </Card>
             );
           })}
-        </Section> */}
+        </Section>
 
         {/* skills */}
         <Section>
@@ -197,30 +219,27 @@ export default function Page() {
             })}
           </div>
         </Section>
-        {/* Education */}
-      <Section>
-          <h2 className="text-xl font-bold">Education</h2>
-          {RESUME_DATA.education.map((education) => {
+
+        {/* COURSES */}
+        <Section>
+          <h2 className="text-xl font-bold">Courses</h2>
+          {RESUME_DATA.courses.map((cr) => {
             return (
-              <Card key={education.school}>
+              <Card key={cr.course}>
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="font-semibold leading-none">
-                      {education.school}
-                    </h3>
+                    <h3 className="font-semibold leading-none">{cr.course}</h3>
                     <div className="text-sm tabular-nums text-gray-500">
-                      {education.start} - {education.end}
+                      {cr.start} - {cr.end}
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="mt-2">{education.degree}</CardContent>
+                <CardContent className="mt-2">{cr.source}</CardContent>
               </Card>
             );
           })}
         </Section>
       </section>
-
-      
 
       <CommandMenu
         links={[
