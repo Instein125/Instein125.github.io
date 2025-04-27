@@ -134,7 +134,7 @@ export const RESUME_DATA = {
       description:
         "Developed a BLE-based notification system enabling communication between nodes in a mesh topology for industrial and office notification applications.",
       link: {
-        // href: "https://github.com/Instein125/Delta-Arm-Waste-Classifier",
+        href: "",
       },
     },
     {
@@ -143,7 +143,7 @@ export const RESUME_DATA = {
       description:
         "Designed a high-performance 4-layer development board for EC200U MCU with MIPI camera and display interfaces and high speed USB lines.",
       link: {
-        // href: "https://github.com/Instein125/Delta-Arm-Waste-Classifier",
+        href: "",
       },
     },
     {
@@ -161,7 +161,7 @@ export const RESUME_DATA = {
       // logo: ConsultlyLogo,
       link: {
         // label: "consultly.com",
-        // href: "https://github.com/Instein125/Banking-customer-support-chatbot",
+        href: "https://github.com/Instein125/Banking-customer-support-chatbot",
       },
     },
     {
