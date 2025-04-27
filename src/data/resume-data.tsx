@@ -6,9 +6,9 @@ export const RESUME_DATA = {
   location: "Bharatpur-15, Chitwan, Nepal",
   // locationLink: "https://www.google.com/maps/place/Wrocław",
   about:
-    "Passionate Electronics Engineer with interest for Machine Learning, Deep Learning, Natural Language Processing, Computer Vision and Flutter",
+    "Passionate Electronics Engineer with interest for Embedded System, IoT, PCB designing, Artificial Intelligenve and Machine Learning",
   summary:
-    "I'm a passionate Electronics Communication and Information Engineer with a profound interest in the ever-evolving realms of Data Science and Flutter app development. I am currently focused on honing my skills in Natural Language Processing (NLP). I enjoy  Robotics, Machine Learning, Deep Learning and App development. As a hobby I like to sketch.",
+    "I'm a passionate Electronics, Communication, and Information Engineer with a strong focus on Embedded Systems, Robotics, and IoT development. I have a keen interest in the intersection of hardware and software, including areas like firmware development, PCB design, and BLE-based systems. I also actively explore Artificial Intelligence, Machine Learning and app development to complement my embedded projects. In my free time, I enjoy sketching as a creative outlet.",
   avatarUrl: "https://avatars.githubusercontent.com/u/83692376?s=96&v=4",
   personalWebsiteUrl: "https://sammanshrestha.com.np/#/",
   contact: {
@@ -25,25 +25,20 @@ export const RESUME_DATA = {
         url: "https://www.linkedin.com/in/samman-stha/",
         icon: LinkedInIcon,
       },
-      // {
-      //   name: "X",
-      //   url: "https://x.com/BartoszJarocki",
-      //   icon: XIcon,
-      // },
     ],
   },
   education: [
-    {
-      school: "Fusemachine Nepal",
-      degree: "Microdegree™, Artificial Intelligence",
-      start: "2023",
-      end: "2024",
-    },
     {
       school: "Pashchimanchal Campus, IOE",
       degree:
         "Bachelor of Engineering - BEI, Electronics, Information and Communication Engineering",
       start: "2019",
+      end: "2024",
+    },
+    {
+      school: "Fusemachine Nepal",
+      degree: "Microdegree™, Artificial Intelligence",
+      start: "2023",
       end: "2024",
     },
   ],
